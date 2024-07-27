@@ -4,97 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Network Diagram</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="legend">
-        <div class="legend-item">
-            <img src="https://www.svgrepo.com/show/456700/router.svg" alt="Router Icon" class="icon">
-            <span>Internet Router</span>
-        </div>
-        <div class="legend-item">
-            <img src="https://www.svgrepo.com/show/503444/network-switch.svg" alt="Kill Switch Icon" class="icon">
-            <span>Kill Switch</span>
-        </div>
-        <div class="legend-item">
-            <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Core Switch Icon" class="icon">
-            <span>Core Switch</span>
-        </div>
-        <div class="legend-item">
-            <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Distribution Switch Icon" class="icon">
-            <span>Distribution Switch</span>
-        </div>
-        <div class="legend-item">
-            <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
-            <span>End Device</span>
-        </div>
-    </div>
-    <div class="network-diagram">
-        <div class="router">
-            <img src="https://www.svgrepo.com/show/456700/router.svg" alt="Router Icon" class="icon">
-            <div class="label">Internet Router</div>
-        </div>
-        <div class="connector"></div>
-        <div class="kill-switch">
-            <img src="https://www.svgrepo.com/show/503444/network-switch.svg" alt="Kill Switch Icon" class="icon">
-            <div class="label">Kill Switch</div>
-        </div>
-        <div class="connector"></div>
-        <div class="core-switch">
-            <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Core Switch Icon" class="icon">
-            <div class="label">Core Switch</div>
-        </div>
-        <div class="distribution-switches">
-            <div class="connector"></div>
-            <div class="distribution-switch">
+    <div class="container">
+        <div class="legend mb-4">
+            <div class="legend-item">
+                <img src="https://www.svgrepo.com/show/456700/router.svg" alt="Router Icon" class="icon">
+                <span>Internet Router</span>
+            </div>
+            <div class="legend-item">
+                <img src="https://www.svgrepo.com/show/503444/network-switch.svg" alt="Kill Switch Icon" class="icon">
+                <span>Kill Switch</span>
+            </div>
+            <div class="legend-item">
+                <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Core Switch Icon" class="icon">
+                <span>Core Switch</span>
+            </div>
+            <div class="legend-item">
                 <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Distribution Switch Icon" class="icon">
-                <div class="label">Distribution Switch 1</div>
-                <div class="end-devices">
-                    <div class="connector"></div>
-                    <div class="device">
-                        <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
-                        <div class="label">End Device 1 (Finance)</div>
+                <span>Distribution Switch</span>
+            </div>
+            <div class="legend-item">
+                <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
+                <span>End Device</span>
+            </div>
+        </div>
+        <div class="network-diagram mb-4">
+            <div class="router">
+                <img src="https://www.svgrepo.com/show/456700/router.svg" alt="Router Icon" class="icon">
+                <div class="label">Internet Router</div>
+            </div>
+            <div class="connector"></div>
+            <div class="kill-switch">
+                <img src="https://www.svgrepo.com/show/503444/network-switch.svg" alt="Kill Switch Icon" class="icon">
+                <div class="label">Kill Switch</div>
+            </div>
+            <div class="connector"></div>
+            <div class="core-switch">
+                <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Core Switch Icon" class="icon">
+                <div class="label">Core Switch</div>
+            </div>
+            <div class="distribution-switches">
+                <div class="connector"></div>
+                <div class="distribution-switch">
+                    <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Distribution Switch Icon" class="icon">
+                    <div class="label">Distribution Switch 1</div>
+                    <div class="end-devices">
+                        <div class="connector"></div>
+                        <div class="device">
+                            <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
+                            <div class="label">End Device 1 (Finance)</div>
+                        </div>
+                        <div class="connector"></div>
+                        <div class="device">
+                            <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
+                            <div class="label">End Device 2 (HR)</div>
+                        </div>
                     </div>
-                    <div class="connector"></div>
-                    <div class="device">
-                        <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
-                        <div class="label">End Device 2 (HR)</div>
+                </div>
+                <div class="connector"></div>
+                <div class="distribution-switch">
+                    <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Distribution Switch Icon" class="icon">
+                    <div class="label">Distribution Switch 2</div>
+                    <div class="end-devices">
+                        <div class="connector"></div>
+                        <div class="device">
+                            <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
+                            <div class="label">End Device 3 (IT)</div>
+                        </div>
+                        <div class="connector"></div>
+                        <div class="device">
+                            <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
+                            <div class="label">End Device 4 (IT)</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="connector"></div>
-            <div class="distribution-switch">
-                <img src="https://www.svgrepo.com/show/372561/network-switch-outline-badged.svg" alt="Distribution Switch Icon" class="icon">
-                <div class="label">Distribution Switch 2</div>
-                <div class="end-devices">
-                    <div class="connector"></div>
-                    <div class="device">
-                        <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
-                        <div class="label">End Device 3 (IT)</div>
-                    </div>
-                    <div class="connector"></div>
-                    <div class="device">
-                        <img src="https://www.svgrepo.com/show/415342/laptop-computer-pc.svg" alt="End Device Icon" class="icon">
-                        <div class="label">End Device 4 (IT)</div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="security-mechanisms">
+            <h2>Security Mechanisms</h2>
+            <ul>
+                <li><strong>Access Control Lists (ACLs):</strong> Define rules to allow or deny traffic based on IP addresses, protocols, and ports. Implement on core switch and distribution switches to control inter-VLAN communication.</li>
+                <li><strong>VLANs:</strong> Segment the network into VLANs for different departments. This limits broadcast domains and restricts access to resources within each VLAN. Configure VLANs on core switch and distribution switches.</li>
+                <li><strong>Port Security:</strong> Limit the number of devices that can connect to a port and use MAC address filtering to allow only known devices. Configure on distribution switches.</li>
+                <li><strong>Network Access Control (NAC):</strong> Enforce security policies on devices before they can access the network. Implement NAC with a central authentication server connected to the core switch.</li>
+                <li><strong>802.1X Authentication:</strong> Require devices to authenticate before accessing the network using a RADIUS server. Configure 802.1X on core switch and distribution switches.</li>
+                <li><strong>Strong Passwords and Secure Management Interfaces:</strong> Use complex passwords and secure management protocols (e.g., SSH, HTTPS). Ensure all switches and routers are configured with strong passwords and management interfaces are secured.</li>
+                <li><strong>Regular Updates and Patching:</strong> Keep firmware and software up-to-date to protect against vulnerabilities. Regularly update all network devices, including core switch, distribution switches, and router.</li>
+                <li><strong>Intrusion Detection and Prevention Systems (IDS/IPS):</strong> Monitor network traffic for suspicious activity and prevent potential attacks. Deploy IDS/IPS on the core switch or as a separate device in the network.</li>
+                <li><strong>Logging and Monitoring:</strong> Enable logging and use centralized monitoring tools to track access and detect anomalies. Configure logging on all network devices and use a centralized monitoring system.</li>
+                <li><strong>Network Segmentation:</strong> Further segment the network with additional firewalls or security appliances between VLANs. Consider adding a firewall between VLANs for additional security.</li>
+            </ul>
         </div>
     </div>
-    <div class="security-mechanisms">
-        <h2>Security Mechanisms</h2>
-        <ul>
-            <li><strong>Access Control Lists (ACLs):</strong> Define rules to allow or deny traffic based on IP addresses, protocols, and ports. Implement on core and distribution switches to control inter-VLAN communication.</li>
-            <li><strong>VLANs:</strong> Segment the network into VLANs for different departments. This limits broadcast domains and restricts access to resources within each VLAN.</li>
-            <li><strong>Port Security:</strong> Limit the number of devices that can connect to a port and use MAC address filtering to allow only known devices.</li>
-            <li><strong>Network Access Control (NAC):</strong> Enforce security policies on devices before they can access the network.</li>
-            <li><strong>802.1X Authentication:</strong> Require devices to authenticate before accessing the network using a RADIUS server.</li>
-            <li><strong>Strong Passwords and Secure Management Interfaces:</strong> Use complex passwords and secure management protocols (e.g., SSH, HTTPS).</li>
-            <li><strong>Regular Updates and Patching:</strong> Keep firmware and software up-to-date to protect against vulnerabilities.</li>
-            <li><strong>Intrusion Detection and Prevention Systems (IDS/IPS):</strong> Monitor network traffic for suspicious activity and prevent potential attacks.</li>
-            <li><strong>Logging and Monitoring:</strong> Enable logging and use centralized monitoring tools to track access and detect anomalies.</li>
-            <li><strong>Network Segmentation:</strong> Further segment the network with additional firewalls or security appliances between VLANs.</li>
-        </ul>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
